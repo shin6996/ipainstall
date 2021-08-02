@@ -14,5 +14,13 @@
     "serverKeyType": "RSA-2048",
     "subscriberEmail": "dubayyshin@gmail.com"
   },
-  "sites": []
+  "sites": [
+    {
+      "subject": "www.plipli.me",
+      "altnames": [
+        "www.plipli.me"
+      ],
+      "renewAt": 1
+    }
+  ]
 }
