@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
     var ua = req.get('User-Agent');
     if (is_iOS(req)){
         // res.send('respond with a ios resource');
-        res.redirect("https://www.google.com/");
+        res.redirect("https://testflight.qdryd.top/download?sn=pilipiliY");
     }
     else if (is_android(req)) {
         res.send('respond with android resource');
