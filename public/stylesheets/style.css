@@ -15,7 +15,7 @@ a {
   right: 5%;
   top: 5%;
   height: 48px;
-  width: 350px;
+  width: 240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +23,7 @@ a {
 
 .contact {
   height: 48px;
-  width: 220px;
+  width: 110px;
   background-color: rgb(26, 26, 26);
   border-radius: 24px;
   color: rgb(255, 72, 53);
@@ -48,6 +48,7 @@ a {
   left: 15%;
   bottom: 57%;
 }
+
 .subtitle {
   color: rgb(153, 153, 153);
   font: 28px "Lucida Grande", Helvetica, Arial, sans-serif;

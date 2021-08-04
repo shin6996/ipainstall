@@ -13,18 +13,7 @@ var is_android = function (req) {
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
-    console.log(req.headers.host)
-
-    var ua = req.get('User-Agent');
-    if (is_iOS(req)){
-        res.redirect("https://testflight.qdryd.top/download?sn=pilipiliY");
-    }
-    else if (is_android(req)) {
-        res.send('安卓下载页面正在开发中......');
-    }
-    else{
-        res.send('respond with a resource');
-    }
+    res.redirect(req.headers.host);
 });
 
 module.exports = router;
