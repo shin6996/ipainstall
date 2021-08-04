@@ -17,15 +17,14 @@ router.get('/', function (req, res, next) {
 
     var ua = req.get('User-Agent');
     if (is_iOS(req)){
-
+        res.send('respond with a ios resource');
     }
     else if (is_android(req)) {
-
+        res.send('respond with android resource');
     }
     else{
-
+        res.send('respond with a resource');
     }
-    res.send('respond with a resource');
 });
 
 module.exports = router;
