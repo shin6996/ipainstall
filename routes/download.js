@@ -17,11 +17,10 @@ router.get('/', function (req, res, next) {
 
     var ua = req.get('User-Agent');
     if (is_iOS(req)){
-        // res.send('respond with a ios resource');
         res.redirect("https://testflight.qdryd.top/download?sn=pilipiliY");
     }
     else if (is_android(req)) {
-        res.send('respond with android resource');
+        res.send('安卓下载页面正在开发中......');
     }
     else{
         res.send('respond with a resource');
