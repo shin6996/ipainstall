@@ -13,7 +13,7 @@ var is_android = function (req) {
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
-    console.log(req.headers.host)
+    // console.log(req.headers.host)
 
     var ua = req.get('User-Agent');
     if (is_iOS(req)){
