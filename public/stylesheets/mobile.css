@@ -98,14 +98,14 @@ a {
     border-radius: 10px;
     display: flex;
     display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 textarea {
-    flex: 1;
     background-color: transparent;
     color: white;
     border: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
+    height: 90%;
+    width: 90%;
 }
