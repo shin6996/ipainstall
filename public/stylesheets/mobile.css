@@ -12,6 +12,7 @@ a {
 
 .container {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
@@ -31,6 +32,7 @@ a {
     width: 207px;
     height: 66px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     border-radius: 9pt;
@@ -51,6 +53,7 @@ a {
     height: 30px;
     width: 350px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     margin: 50px;
@@ -63,6 +66,7 @@ a {
     border-radius: 24px;
     color: rgb(255, 72, 53);
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
@@ -75,6 +79,7 @@ a {
     border-radius: 24px;
     color: rgb(255, 72, 53);
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
@@ -92,6 +97,7 @@ a {
     margin-top: 20px;
     border-radius: 10px;
     display: flex;
+    display: -webkit-flex;
 }
 
 textarea {
