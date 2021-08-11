@@ -20,6 +20,7 @@ var is_android = function (req) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
+  console.log(  req.get('User-Agent')  )
   if (is_iOS(req)) {
     var index = path.resolve(__dirname, '../public/ios.html');
     fs.readFile(index, 'utf8', (err, text) => {
