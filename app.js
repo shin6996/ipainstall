@@ -6,6 +6,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var qrRouter = require('./routes/qr');
+var tfRouter = require('./routes/testflight');
 
 var app = express();
 
@@ -14,9 +15,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/qr', qrRouter);
+app.use('/tf', tfRouter);
 
 module.exports = app;

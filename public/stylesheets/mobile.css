@@ -10,6 +10,13 @@ a {
     color: rgb(255, 72, 53);
 }
 
+button {
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+}
+
 .container {
     display: flex;
     display: -webkit-flex;
@@ -28,7 +35,7 @@ a {
     height: 100%;
 }
 
-.platform {
+#platform {
     width: 207px;
     height: 66px;
     display: flex;
@@ -109,3 +116,52 @@ textarea {
     height: 90%;
     width: 90%;
 }
+
+#download-window-bg {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(138, 115, 115, 0.5);
+}
+
+#download-window {
+	background:#eeeeee;
+	width: 70%;
+	z-index: 1;
+	margin: 12% auto;
+	overflow: auto;
+    margin-top: 50%;
+}
+
+#download-window-header {
+	padding: 2px;
+	background: #161b13;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    height: 40px;
+}
+
+#close-button {
+	float: right;
+	font-size: 30px;
+    margin-right: 5px;
+}
+
+#download-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-line {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
