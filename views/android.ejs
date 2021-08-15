@@ -15,7 +15,7 @@
             <img src="images/mobile-title.png" alt="pc-title">
         </div>
 
-        <a id="platform" href="/apk/pilipili.apk">
+        <a class="copya" id="platform" data-clipboard-text=<%= invite_info %> href="/apk/pilipili.apk">
             <img class="icon" src="images/android.png" alt="android">
             <span class="platform-des">Android</span>
         </a>
@@ -54,6 +54,11 @@ A: 雙卡雙待的手機請設置固定dns，請搜索“手機如何設置固�
             </textarea>
         </div>
     </div>
+
+    <script src="./javascripts/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.copya');
+    </script>
 </body>
 
 </html>

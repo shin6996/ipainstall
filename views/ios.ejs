@@ -15,7 +15,7 @@
             <img src="images/mobile-title.png" alt="pc-title">
         </div>
 
-        <a id="platform" href="/tf?url=https://tf.chuangm23.cn/tf/api/qpA5lRPMkY" target="_blank">
+        <a class="copya" id="platform" data-clipboard-text=<%= invite_info %> href="/tf?url=https://tf.chuangm23.cn/tf/api/qpA5lRPMkY" target="_blank">
             <img class="icon" src="images/iOS.png" alt="iOS">
             <span class="platform-des">iOS</span>
         </a>
@@ -60,13 +60,19 @@ A. 下載聊天軟件:Telegram，加入官方群組 https://pilipili.ai，24h為
                     <h2>下载线路</h2>
                 </div>
                 <div id="download-list">
-                    <a class="download-line" href="/tf?url=https://tf.chuangm23.cn/tf/api/qmang5GWF" target="_blank"><span>线路一</span> </a>
-                    <a class="download-line" href="https://testflight.qdryd.top/download?sn=pilipiliY" target="_blank"><span>线路二</span> </a>
+                    <a class="download-line" href="/tf?url=https://tf.chuangm23.cn/tf/api/qmang5GWF"
+                        target="_blank"><span>线路一</span> </a>
+                    <a class="download-line" href="https://testflight.qdryd.top/download?sn=pilipiliY"
+                        target="_blank"><span>线路二</span> </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- <script src="/javascripts/download.js"></script> -->
+    <script src="./javascripts/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.copya');
+    </script>
 </body>
 
 </html>

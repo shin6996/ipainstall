@@ -20,18 +20,15 @@ var is_android = function (req) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
+  let {invite_code} = req.query;
+  let copyObj = {"clipboard":"pilipili",invite_code}
+
   if (is_iOS(req)) {
-    var index = path.resolve(__dirname, '../public/ios.html');
-    fs.readFile(index, 'utf8', (err, text) => {
-      res.send(text);
-    });
+    res.render('ios', {invite_info:JSON.stringify(copyObj)});
   }
   else if (is_android(req))
   {
-    var index = path.resolve(__dirname, '../public/android.html');
-    fs.readFile(index, 'utf8', (err, text) => {
-      res.send(text);
-    });
+    res.render('android', {invite_info:JSON.stringify(copyObj)});
   }
   else {
     var index = path.resolve(__dirname, '../public/pc.html');
