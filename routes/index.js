@@ -31,10 +31,7 @@ router.get('/', function (req, res, next) {
     res.render('android', {invite_info:JSON.stringify(copyObj)});
   }
   else {
-    var index = path.resolve(__dirname, '../public/pc.html');
-    fs.readFile(index, 'utf8', (err, text) => {
-      res.send(text);
-    });
+    res.render('pc');
   }
 });
 
