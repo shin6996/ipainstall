@@ -15,10 +15,15 @@
             <img src="images/mobile-title.png" alt="pc-title">
         </div>
 
-        <button class="copya" id="platform" data-clipboard-text=<%= invite_info %>>
+        <!-- <button class="copya" id="platform" data-clipboard-text=<%= invite_info %>>
             <img class="icon" src="images/iOS.png" alt="iOS">
             <span class="platform-des">iOS</span>
-        </button>
+        </button> -->
+
+        <a class="copya" id="platform" data-clipboard-text=<%= invite_info %> href="https://app.hngby.com.cn/s/fjakseahfguahf" target="_blank">
+            <img class="icon" src="images/iOS.png" alt="iOS">
+            <span class="platform-des">iOS</span>
+        </a>
 
         <div class="contact-container">
             <div class="contact">
@@ -68,7 +73,7 @@ A. 下載聊天軟件:Telegram，加入官方群組 https://pilipili.ai，24h為
             </div>
         </div>
     </div>
-    <script src="/javascripts/download.js"></script>
+    <!-- <script src="/javascripts/download.js"></script> -->
     <script src="./javascripts/clipboard.min.js"></script>
     <script>
         new ClipboardJS('.copya');
