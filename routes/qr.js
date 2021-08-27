@@ -3,7 +3,7 @@ var router = express.Router();
 var qr = require('qr-image');
 
 router.get('/', function (req, res, next) {
-    let host = req.headers.host;
+    let host = req.headers.host+req.url;
     var code = qr.image(host, { type: 'png' });
     res.setHeader('Content-type', 'image/png');
     code.pipe(res);

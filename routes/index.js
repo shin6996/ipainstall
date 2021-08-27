@@ -38,7 +38,7 @@ router.get('/', function (req, res, next) {
     res.render('android', { copy_info: JSON.stringify(copyObj) });
   }
   else {
-    res.render('pc');
+    res.render('pc', { query_info: req.url });
   }
 });
 
