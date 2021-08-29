@@ -13,6 +13,7 @@ min.sh
 greenlock.d/accounts/
 greenlock.d/live/
 public/apk/
+public/ipa/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
