@@ -1,0 +1,60 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url(../images/prom_dl_bg.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: local;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 72, 53);
+}
+
+.s-img {
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.container {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    margin: 10px;
+    width: 300px;
+}
+
+.title img {
+    width: 100%;
+    height: 100%;
+}
+
+.q-title{
+    color: white;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.qa-container {
+    width: 95%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    background-color: transparent;
+    color: white;
+    border: none;
+    height: 90%;
+    width: 90%;
+}

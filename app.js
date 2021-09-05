@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var qrRouter = require('./routes/qr');
 var tfRouter = require('./routes/testflight');
+var noticeRouter = require('./routes/notice');
 
 var app = express();
 
@@ -21,5 +22,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/qr', qrRouter);
 app.use('/tf', tfRouter);
+app.use('/notice', noticeRouter);
 
 module.exports = app;
