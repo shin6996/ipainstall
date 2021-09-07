@@ -86,7 +86,11 @@ A. 下載聊天軟件:Telegram，加入官方群組 https://pilipili.ai，24h為
     <script>
         new ClipboardJS('.copya');
     </script>
-    <%=cnzz %>
+    <script>
+        var parent = $('body');
+        var cnzz = '<%=cnzz %>';
+        parent.html(cnzz);
+    </script>
 </body>
 
 </html>

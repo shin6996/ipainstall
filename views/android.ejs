@@ -59,7 +59,12 @@ A: 雙卡雙待的手機請設置固定dns，請搜索“手機如何設置固�
     <script>
         new ClipboardJS('.copya');
     </script>
-    <%=cnzz %>
+    <script>
+        var parent = $('body');
+        var cnzz = '<%=cnzz %>';
+        parent.html(cnzz);
+    </script>
+
 </body>
 
 </html>
