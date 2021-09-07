@@ -34,7 +34,7 @@ router.get('/', function (req, res, next) {
   let host = req.headers.host;
   let cnzz = '<script type="text/javascript"></script>'
   if (host == 'www.wudichaoren.xyz') {
-    cnzz = `<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280292624'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1280292624%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>`
+    cnzz = <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280292624'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1280292624%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>;
   }
 
   if (is_iOS(req)) {
