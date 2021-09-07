@@ -31,6 +31,8 @@ router.get('/', function (req, res, next) {
     copyObj = { "clipboard": "pilipili", channel_id }
   }
 
+  let host =  req.headers.host;
+
   if (is_iOS(req)) {
     res.render('ios', { copy_info: JSON.stringify(copyObj) });
   }
