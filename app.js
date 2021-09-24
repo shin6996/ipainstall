@@ -8,6 +8,10 @@ var usersRouter = require('./routes/users');
 var qrRouter = require('./routes/qr');
 var tfRouter = require('./routes/testflight');
 var noticeRouter = require('./routes/notice');
+var payRouter = require('./routes/api/pay');
+var payPageRouter = require('./routes/pay');
+var orderRouter = require('./routes/api/order');
+var orderPageRouter = require('./routes/order');
 
 var app = express();
 
@@ -23,5 +27,9 @@ app.use('/users', usersRouter);
 app.use('/qr', qrRouter);
 app.use('/tf', tfRouter);
 app.use('/notice', noticeRouter);
+app.use('/api/pay', payRouter);
+app.use('/pay', payPageRouter);
+app.use('/api/order', orderRouter);
+app.use('/order', orderPageRouter);
 
 module.exports = app;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PiliPili</title>
+    <link rel="stylesheet" href="/stylesheets/pay.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="order">
+        <span>订单号:<span id="order_id"></span> </span>
+        <a class="aBt" id="check_order" onclick="getorderinfo()">查询下载链接</a>
+    </div>
+
+    <div class="container">
+        <a class="aBt" href="https://eg.im/joinchat/b96714f9f83546bbb42755390d18878b" target="view_window">官方社群</a>
+        <a id="payBt" class="aBt" onclick="getpayinfo()">15元购买</a>
+    </div>
+</body>
+<script src="./javascripts/pay.js"></script>
+<script src="./javascripts/clipboard.min.js"></script>
+<script>
+    new ClipboardJS('.copya');
+</script>
+
+</html>
