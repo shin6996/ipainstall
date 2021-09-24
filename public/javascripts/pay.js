@@ -42,7 +42,6 @@ function getorderinfo() {
                 copyBt.innerText = "复制会员兑换码";
 
                 document.getElementById("order").appendChild(conversionSpan);
-                // document.getElementById("order").appendChild(copyBt);
 
                 $("#order").append("<a class='copya' data-clipboard-text="+conversion+">复制会员兑换码</a>");
 
