@@ -12,13 +12,13 @@
 
 <body>
     <div id="order">
-        <span>订单号:<span id="order_id"></span> </span>
+        <span>订单号:<span id="order_id"><%=order_id%></span></span>
         <a class="aBt" id="check_order" onclick="getorderinfo()">查询下载链接</a>
     </div>
 
     <div class="container">
         <a class="aBt" href="https://eg.im/joinchat/b96714f9f83546bbb42755390d18878b" target="view_window">官方社群</a>
-        <a id="payBt" class="aBt" onclick="getpayinfo()">15元购买</a>
+        <a id="payBt" class="aBt" href=<%=pay_url%> target="view_window">15元购买</a>
     </div>
 </body>
 <script src="./javascripts/pay.js"></script>

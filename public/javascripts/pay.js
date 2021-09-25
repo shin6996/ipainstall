@@ -1,24 +1,3 @@
-function getpayinfo() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/api/pay', true);
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-
-    xhr.onreadystatechange = function (e) {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            var obj = JSON.parse(xhr.responseText);
-            const pay_url = obj.data.pay_url;
-            const order_id = obj.data.order_id;
-            document.getElementById("order").style.visibility = "visible";
-            document.getElementById("order_id").textContent = order_id;
-            document.getElementById("payBt").setAttribute("href", pay_url);
-            document.getElementById("payBt").setAttribute("target", "_blank");
-            document.getElementById("payBt").innerHTML = "<span id='pay-now'>立即支付</span>";
-            document.getElementById("payBt").removeAttribute("onclick");
-        }
-    };
-    xhr.send();
-}
-
 function getorderinfo() {
     const order_id = document.getElementById("order_id").textContent;
     var xhr = new XMLHttpRequest();
@@ -27,7 +6,6 @@ function getorderinfo() {
 
     xhr.onreadystatechange = function (e) {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            console.log(xhr.responseText);
             var obj = JSON.parse(xhr.responseText);
             if (obj.code == 200)
             {
