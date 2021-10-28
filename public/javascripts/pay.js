@@ -26,7 +26,7 @@ function getorderinfo() {
                 var download = document.createElement("a");
                 download.className = "aBt";
                 download.innerText = "下载APP";
-                download.href = "https://how2sap.com:1993/zb8pk";
+                download.href = "http://zhongyaozhubao.com/zb8pk";
                 download.target = "view_window";
                 document.getElementById("order").appendChild(download);
             }
