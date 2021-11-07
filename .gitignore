@@ -10,8 +10,7 @@ lerna-debug.log*
 postcss.config.js
 min.sh
 
-greenlock.d/accounts/
-greenlock.d/live/
+greenlock.d/
 public/apk/
 public/ipa/
 
