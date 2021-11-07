@@ -20,15 +20,12 @@ var is_android = function (req) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  let { invite_code, channel_id } = req.query;
+  let { invite_id } = req.query;
 
-  var copyObj = { "clipboard": "pilipili" }
+  var copyObj = { "clipboard": "douyin6996" }
 
-  if (invite_code) {
-    copyObj = { "clipboard": "pilipili", invite_code }
-  }
-  else if (channel_id) {
-    copyObj = { "clipboard": "pilipili", channel_id }
+  if (invite_id) {
+    copyObj = { "clipboard": "douyin6996", invite_id }
   }
 
   let host = req.headers.host;
